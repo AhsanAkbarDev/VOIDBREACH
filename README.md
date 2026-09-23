@@ -130,24 +130,26 @@ Activating it combines:
 
 ## 💻 Selected Source Code
 
-This repository contains selected C# scripts demonstrating the core systems I developed for VOIDBREACH.
+This repository contains selected and presentation-cleaned C# scripts from the completed VOIDBREACH project, highlighting several of the game's core gameplay systems.
 
-### AI
-- Enemy state logic
-- Enemy-specific behaviours
+### 🤖 Enemy AI
 
-### Combat
-- Shared weapon system
-- Player shooting and weapon switching
+- [Enemy.cs](Scripts/AI/Enemy.cs) — State-based enemy AI featuring Idle, Patrol, Chase and Attack behaviours.
+- [Harbinger.cs](Scripts/AI/Harbinger.cs) — Specialised enemy AI featuring a Ground Rupture area attack, cooldown handling and animation events.
 
-### Systems
-- Wave spawning
-- Power Surge activation
-- Level progression
+### 🔫 Combat
 
-### UI
-- HUD and game-state systems
+- [SharedWeapon.cs](Scripts/Combat/SharedWeapon.cs) — Reusable weapon system handling raycast combat, damage, fire rate, ammunition, reloading, pellet count, spread, VFX and audio.
+- [PlayerShoot.cs](Scripts/Combat/PlayerShoot.cs) — Player weapon input, firing, reloading and equipped-weapon management.
 
+### 🧍 Player
+
+- [Movement.cs](Scripts/Player/Movement.cs) — Rigidbody-based movement, mouse-facing rotation, animation parameters, health, damage, death and respawning.
+
+### 🌊 Game Systems
+
+- [Spawner.cs](Scripts/Systems/Spawner.cs) — Multi-wave spawning, enemy tracking, wave progression, victory handling and encounter resetting.
+- [ActivatingPowerSurge.cs](Scripts/Systems/ActivatingPowerSurge.cs) — Arena activation sequence combining gameplay triggers, particle effects, audio and delayed wave activation.
 ---
 
 ## 👨‍💻 Developer
